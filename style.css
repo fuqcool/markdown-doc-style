@@ -1,6 +1,5 @@
-* {
+p, h1, h2, h3, h4, h5, h6, div, ul {
   font-family: Georgia;
-  font-size: 13px;
 }
 
 body {
@@ -23,8 +22,9 @@ h3 { font-size: 1.2em; }
 
 code, pre {
   font-family: Courier New;
-  background-color: #eee;
   border-radius: 2px;
+  background-color: #f8f8f8;
+  font-size: 1em;
 }
 
 pre {
@@ -32,7 +32,7 @@ pre {
 }
 
 code {
-  padding: 1.5px;
+  padding: 2px;
 }
 
 pre code {
@@ -63,9 +63,9 @@ h2 {
   text-align: center;
   list-style-type: none;
   color: #666;
+  font-family: Helvetica;
 }
 
 .authors li {
-  font-family: Helvetica;
   font-size: 0.9em;
 }
