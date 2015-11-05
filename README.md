@@ -1,7 +1,7 @@
 This is my local markdown working environment. It comes with a **redcarpet** wrapper, a markdown css, and a syntax css for code highlighting.
 
 ## Install
-Make sure you have **ruby** installed. Then run `bundle install` to install the dependencies (redcarpet, rouge). That's it.
+Make sure you have **ruby** installed. Then run `bundle install` to install the dependencies (redcarpet, pygments). That's it.
 
 ## Usage
 

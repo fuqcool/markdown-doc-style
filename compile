@@ -1,8 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'redcarpet'
-require 'rouge'
-require 'rouge/plugins/redcarpet'
+require 'pygments'
 
 unless ARGV.length > 0
   STDERR.puts 'No file specified.'
@@ -17,7 +16,9 @@ unless File.exist? file
 end
 
 class HTML < Redcarpet::Render::HTML
-  include Rouge::Plugins::Redcarpet
+  def block_code(code, language)
+    Pygments.highlight(code, lexer: language || 'text')
+  end
 end
 
 extensions = {
